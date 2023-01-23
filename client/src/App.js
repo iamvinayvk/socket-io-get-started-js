@@ -3,7 +3,7 @@ import { io } from "socket.io-client";
 import "./App.css";
 
 const App = () => {
-  const socket = io("http://localhost:3000");
+  const socket = io("https://socket-io-get-started-js-server.onrender.com/");
   const [username, setUsername] = React.useState(null);
   const [name, setName] = React.useState(null);
   const [message, setMessage] = React.useState("");
